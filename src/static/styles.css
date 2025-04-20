@@ -103,6 +103,26 @@ body.dark-mode .activity-card {
 .activity-card ul li {
   margin-bottom: 5px;
   font-size: 14px;
+  color: #333;
+}
+
+body.dark-mode .activity-card ul {
+  color: #bbb;
+}
+
+body.dark-mode .activity-card ul li {
+  color: #ddd;
+}
+
+.activity-card ul li::before {
+  content: "👤 ";
+  color: #0066cc;
+  font-size: 14px;
+  margin-right: 5px;
+}
+
+body.dark-mode .activity-card ul li::before {
+  color: #80d8ff;
 }
 
 .form-group {
@@ -179,18 +199,46 @@ body.dark-mode button:hover {
   position: absolute;
   top: 20px;
   right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
   background-color: #1a237e;
   color: white;
   border: none;
-  padding: 10px 15px;
+  padding: 10px 20px;
   font-size: 14px;
-  border-radius: 5px;
+  font-weight: bold;
+  border-radius: 25px;
   cursor: pointer;
-  transition: background-color 0.2s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
 }
 
 .dark-mode-toggle:hover {
   background-color: #3949ab;
+  transform: scale(1.05);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.dark-mode-toggle:active {
+  transform: scale(0.95);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dark-mode-toggle span {
+  font-size: 16px;
+}
+
+.dark-mode-toggle svg {
+  width: 20px;
+  height: 20px;
+  fill: white;
+  transition: transform 0.3s;
+}
+
+body.dark-mode .dark-mode-toggle svg {
+  transform: rotate(180deg);
 }
 
 footer {
