@@ -125,6 +125,50 @@ body.dark-mode .activity-card ul li::before {
   color: #80d8ff;
 }
 
+/* Added a participants section to the activity cards */
+.activity-card .participants {
+  margin-top: 15px;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+}
+
+body.dark-mode .activity-card .participants {
+  background-color: #2a2a2a;
+  border-color: #444;
+}
+
+.activity-card .participants h5 {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #1a237e;
+}
+
+body.dark-mode .activity-card .participants h5 {
+  color: #80d8ff;
+}
+
+.activity-card .participants ul {
+  list-style-type: circle;
+  padding-left: 20px;
+  color: #555;
+}
+
+body.dark-mode .activity-card .participants ul {
+  color: #bbb;
+}
+
+.activity-card .participants ul li {
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #333;
+}
+
+body.dark-mode .activity-card .participants ul li {
+  color: #ddd;
+}
+
 .form-group {
   margin-bottom: 15px;
 }
